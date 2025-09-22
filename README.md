@@ -62,5 +62,19 @@ Power management is handled by a **DC-DC buck converter** (12V → 5V).
 2. Wire PCA9685 and Arduino as described in wiring section  
 3. Upload the **Arduino code** to the board  
 4. Power the system using a **12V adapter → DC-DC → Servos**  
-5. Run **MATLAB scripts** to test kinematics and visualize motion  
+5. Run **MATLAB scripts** to test kinematics and visualize motion
 
+---
+
+├── Code/                 # Arduino code for arm control
+│   └── Pick and PLace.ino
+│
+├── Matlab/               # MATLAB scripts for kinematic analysis
+│   └── Arm_Simulation.m
+│
+├── Proteus/              # Proteus circuit simulation project
+│   └── Robotic_Arm.pdsprj
+│
+├── Images/               # Photos and diagrams (robot & circuit)
+│
+└── README.md             # Project documentation
