@@ -1,18 +1,28 @@
 # 🤖 4-DOF MeArm Robotic Arm
 
-This project showcases a **4-DOF robotic arm** built using the **MeArm kit**.  
-It performs **pick-and-place tasks** powered by **SG90 servo motors**, controlled with an **Arduino Uno** and a **PCA9685 PWM driver**.  
-Power management is handled by a **DC-DC buck converter** (12V → 5V).  
-**MATLAB** was used for kinematic analysis, trajectory visualization, and workspace planning.  
+This project showcases a **4-DOF robotic arm** built using the **MeArm kit**, designed to perform **pick-and-place operations**.  
+The system integrates **Arduino Uno, PCA9685 PWM driver, SG90 servo motors**, and a **DC-DC buck converter** for safe power management.  
+Additionally, **MATLAB** was used for kinematic modeling, trajectory simulation, and workspace analysis, while **Proteus** was used for circuit simulation.  
+
+---
+
+## 🏗️ System Overview
+The robotic arm system consists of three main parts:  
+1. **Hardware** → MeArm structure + Arduino Uno + PCA9685 + Servos + Power Supply  
+2. **Simulation** → MATLAB used for kinematics and trajectory analysis  
+3. **Circuit Validation** → Proteus used to test electronic connections  
+
+📌 *System diagram goes here (add image to `/Images`)*  
 
 ---
 
 ## ✨ Features
-- 🔧 Pre-assembled **MeArm kit** mechanical structure  
-- 🎛 **Arduino Uno + PCA9685** control system  
-- ⚡ **DC-DC converter** ensures safe 5V power from 12V source  
-- 📐 **MATLAB simulations** for motion, kinematics, and trajectory planning  
-- 🤖 Smooth and repeatable **pick-and-place operations**  
+- 🔧 **MeArm 4-DOF Kit** used as mechanical structure  
+- 🎛 **Arduino Uno + PCA9685** for multi-servo control  
+- ⚡ **DC-DC buck converter** for safe power supply (12V → 5V)  
+- 📐 **MATLAB simulations** for forward/inverse kinematics & trajectory planning  
+- 💻 **Proteus circuit simulation** for safe circuit validation  
+- 🤖 Capable of **smooth, repeatable pick-and-place tasks**  
 
 ---
 
@@ -37,44 +47,22 @@ Power management is handled by a **DC-DC buck converter** (12V → 5V).
 - DC-DC Input → External **12V battery/adapter**  
 - Common Ground → Shared between **Arduino, PCA9685, and power supply**  
 
+📌 *Wiring diagram image goes here (add to `/Images`)*  
+
 ---
 
 ## 📐 MATLAB Analysis
-- ✅ Defined **DH parameters** for forward & inverse kinematics  
-- ✅ Visualized **joint positions** and simulated **end-effector motion**  
-- ✅ Performed **trajectory planning** and workspace exploration  
-- ✅ Applied **PD computed torque control** for smooth motion evaluation  
+- Defined **DH parameters** for forward & inverse kinematics  
+- Visualized **joint positions** and **end-effector trajectories**  
+- Simulated **workspace volume** and feasible motions  
+- Implemented **PD computed torque control** for smooth trajectory tracking  
 
 ---
 
 ## 📸 Project Gallery
 
 ### Robot Full View
-![MeArm Robot](robot_photo.jpg) <!-- replace with your robot photo file -->
+![MeArm Robot](Images/robot_photo.jpg)
 
 ### MATLAB Circuit Simulation
-![MATLAB Simulation](matlab_simulation.jpg) <!-- replace with your MATLAB circuit image -->
-
----
-
-## 🚀 How to Run
-1. Assemble the **MeArm kit** and connect servos  
-2. Wire PCA9685 and Arduino as described in wiring section  
-3. Upload the **Arduino code** to the board  
-4. Power the system using a **12V adapter → DC-DC → Servos**  
-5. Run **MATLAB scripts** to test kinematics and visualize motion
-
----
-
-├── Code/                 # Arduino code for arm control
-│   └── Pick and PLace.ino
-│
-├── Matlab/               # MATLAB scripts for kinematic analysis
-│   └── Arm_Simulation.m
-│
-├── Proteus/              # Proteus circuit simulation project
-│   └── Robotic_Arm.pdsprj
-│
-├── Images/               # Photos and diagrams (robot & circuit)
-│
-└── README.md             # Project documentation
+![MATLAB Simulation](Images/circuit_simulation.jpg)
