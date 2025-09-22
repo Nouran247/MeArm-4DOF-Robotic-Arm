@@ -62,7 +62,7 @@ The robotic arm system consists of three main parts:
 ## 📸 Project Gallery
 
 ### Robot Full View
-![MeArm Robot](Images/robot_photo.jpg)
+![MeArm Robot](Images/arm_robot_photo.png)
 
 ### MATLAB Circuit Simulation
 ![MATLAB Simulation](Images/circuit_simulation.jpg)
